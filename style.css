@@ -1,0 +1,17 @@
+.title {
+  background-color: green;
+}
+.content {
+  background-color: blue;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
